@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Appointment System</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Front-end for Student and Teacher Online Appointment System">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Jquery,bootstrap,mdbootstrap">
+        <meta name="author" content="imchetanyadav">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- custom styles -->
+        <link href="css/style.min.css" rel="stylesheet">
+        <!-- lato font -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
+
+    </head>
+    
+    <body>
+        <div id="boxx">
+           <div id="main-content">
+                <div id="container-left">
+                   <div class="appointment">
+                      
+                       <div class="appointment-title">
+                           <div class="title-text">
+                               <i class="fa fa-power-off"></i>APPOINTMENTS
+                               <i class="fa fa-plus add-appointment"></i>
+                           </div>
+                       </div>
+                       
+                       <div class="appointment-content">   
+                          <div class="card">
+                                <div class="card-block">
+                                    <div class="col-xs-4 main app-time"><b>05:30</b></div>
+                                    <div class="col-xs-8 main app-title pull-right text-xs-right"><b>Appointment title</b></div>
+                                    <div class="col-xs-4 app-date">3 January, 2017</div>
+                                    <div class="col-xs-8 app-desc pull-right text-xs-right">Appointment main content </div>
+                                </div>
+                          </div>
+                       </div>
+                       
+                        <div class="appointment-form">
+                            <div class="col-xs-6">
+                                <div class="md-form">
+                                    <input placeholder="Selected date" type="text" id="date-picker" class="form-control datepicker">
+                                    <label for="date-picker">Date</label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <div class="md-form">
+                                    <input placeholder="Selected time" type="text" id="time-picker" class="form-control timepicker">
+                                    <label for="time-picker">Time</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <select class="mdb-select" id="app-type">
+                                    <option value="0" disabled selected>Select a option</option>
+                                    <option value="1">Class Reschedule</option>
+                                    <option value="2">Guest Lecture</option>
+                                    <option value="3">Meeting</option>
+                                </select>
+                                <label for="app-type">Appointment Type</label>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="md-form">
+                                    <input type="text" id="app-title" class="form-control">
+                                    <label for="app-title" class="">Appointment Title</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="app-desc" class="md-textarea"></textarea>
+                                    <label for="app-desc">Appointment Description</label>
+                                </div>
+                            </div>
+                            <button class="btn btn-rounded waves-effect close-btn save-btn">SAVE</button>
+                        </div>
+                      
+                      
+                      
+                  </div>
+                </div>
+                <div id="container-right">
+                    
+                    <div class="chat-screen">
+                        <div class="chat_window">
+                            <ul class="messages"></ul>
+                            <div class="bottom_wrapper clearfix">
+                                <div class="message_input_wrapper">
+                                    <input class="message_input" placeholder="Type your message here..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message_template">
+                            <li class="message">
+                                <div class="text_wrapper">
+                                    <div class="text"></div>
+                                </div>
+                            </li>
+                        </div>    
+                    </div>
+                    <div class="profile-header">
+                       <div class="pad">
+                        <div class="left-toggle">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                       </div>
+                        <div class="user-name">
+                            <b>CHETAN YADAV</b>
+                        </div><hr>
+                    </div>
+                        <div class="profile-pic">
+                            <img src="menavatar.png">
+                        </div>
+                    <div class="profile-info">
+                        <div class="branch">
+                            <i class="fa fa-briefcase"></i>
+                            Computer Science<hr>
+                            <i class="fa fa-building"></i>
+                            Room Number 121<hr>
+                            <i class="fa fa-envelope"></i>
+                            0 unread message
+                        </div>
+                    </div>
+                    <div class="chat-btn-wrapper">
+                        <button class="btn btn-rounded waves-effect chat-toggle-btn chat-btn">MESSAGES</button>
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+        <!-- SCRIPTS -->
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script type="text/javascript" src="js/dashboard.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-93526302-4', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

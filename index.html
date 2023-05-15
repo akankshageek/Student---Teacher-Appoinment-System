@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Appointment System</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Front-end for Student and Teacher Online Appointment System">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Jquery,bootstrap,mdbootstrap">
+        <meta name="author" content="imchetanyadav">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- custom styles -->
+        <link href="css/style.min.css" rel="stylesheet">
+        <!-- lato font -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
+
+    </head>
+    
+    <body>
+        <div id="boxx">
+           <div id="main-content">
+                <div id="container-left">
+                   <div class="search-input" id="slide">
+                       <div class="md-form">
+                            <input placeholder="Enter your search term here..." type="text" id="search-text" class="form-control">
+                        </div>
+                   </div>
+                   <div class="left-title">
+                       DEPARTMENTS 
+                   </div>
+                   <div class="search-tags">
+                       <div class="btn-group" data-toggle="buttons">
+                            <label class="btn radio-btn active"><input type="radio" name="options" value="all" checked> All </label>
+                            <label class="btn radio-btn"><input type="radio" name="options" value="computer science"> Computer Science </label>
+                            <label class="btn radio-btn"><input type="radio" name="options" value="mechanical"> Mechanical</label>
+                            <label class="btn radio-btn"><input type="radio" name="options" value="civil"> Civil</label>
+                            <label class="btn radio-btn"><input type="radio" name="options" value="electrical"> Electrical</label>
+                            <label class="btn radio-btn"><input type="radio" name="options" value="management"> Management</label>
+                            <label class="btn radio-btn"><input type="radio" name="options" value="law"> LAW</label>
+                        </div>
+                   </div>
+                   <div class="left-title">
+                       SUGGESTIONS
+                   </div>
+                   <div class="search-result">
+                       <div style="color:#fff;padding-left:3%;padding-bottom:1%;">*Select to view additional details</div>
+                       <a href="dashboard.html">
+                        <div class="col-sm-6 result">
+                            <div class="card">
+                                <div class="card-block">
+                                    <div class="result-img">
+                                        <img src="menavatar.png">
+                                    </div>
+                                    <div class="result-info">
+                                        <div class="result-name"><b>Chetan Yadav</b></div>
+                                        <div class="result-department" style="font-size: 10px;"><b><i>Computer Science</i></b></div>
+                                        <div style="font-size: 10px; color: blue;"><i class="fa fa-clock-o"></i> Room No 121</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="dashboard.html">
+                         <div class="col-sm-6 result">
+                            <div class="card">
+                                <div class="card-block">
+                                    <div class="result-img">
+                                        <img src="menavatar.png">
+                                    </div>
+                                    <div class="result-info">
+                                        <div class="result-name"><b>Manoj Yadav</b></div>
+                                        <div class="result-department" style="font-size: 10px;"><b><i>Mechanical</i></b></div>
+                                        <div style="font-size: 10px; color: blue;"><i class="fa fa-clock-o"></i> Room No 135</div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        </a>
+                    </div>
+                        
+                   </div>
+                <div id="container-right">
+                    <div class="left-toggle">
+                        <i class="fa fa-search prefix"></i>
+                    </div>
+                    <div class="text-xs-center title">
+                        LOGIN
+                    </div>
+                    <div class="text-xs-left input-fields">
+                        <div class="md-form">
+                            <input placeholder="Username" type="text" id="loginemail" class="form-control">
+                        </div>
+                        <div class="md-form">
+                            <input placeholder="Password" type="password" id="loginpw" class="form-control">
+                        </div>
+                    </div>
+                    <div class="text-xs-center">
+                        <button class="btn btn-rounded waves-effect main-btn">LogIn</button><br>
+                        <a class="signup-btn">NEW ACCOUNT</a>
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+        <!-- SCRIPTS -->
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script type="text/javascript" src="js/index.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-93526302-4', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
